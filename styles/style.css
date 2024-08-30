@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Matemasie&display=swap');
+
+.matemasie-regular {
+    font-family: "Matemasie", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    height: 10dvh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #ffff;
+}
+
+.logo{
+    font-family: "Matemasie", sans-serif;
+    font-size: small;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.logo img{
+    height: 70px;
+    width: 70px;
+}
+
+main{
+    min-height: 90dvh;
+    background: url(../assets/bg-wave.svg) no-repeat center;
+    background-size: cover;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 50px;
+}
+
+.seccion-form{
+    min-height: 50px;
+    /* min-width: 70dvw; */
+    max-width: 70dvw;
+    margin: 0 5px;
+    background-color: #d1a4d654;
+    border: solid #A973A0 2px;
+    border-radius: 30px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-tipos-lanas{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 5px 10px;
+}
+
+.form-lanas{
+    width: 150px;
+    height: 25px;
+    margin: 5px 5px;
+    border-radius: 30px;
+    border: solid #A973A0 2px;
+    text-align: center;
+}
+
+.btn-for-lanas{
+    cursor: pointer;
+    background-color: #A973A0;
+    color : #ffff;
+    box-shadow: 3px 3px 0 #70707065;
+}
+
+.btn-for-lanas:active {
+    background-color: #ffff;
+    color: #A973A0;
+    box-shadow: 0 0 0 #70707065;
+}
+
+
+/* Estilos para elementos dinamicos */
+
+.seccion-dib{
+    width: 90%;
+    min-height: 30dvh;
+    display: none;
+    flex-wrap: wrap;
+}
+
+/* Horizontales */
+.dibujo-lana-horizontal{
+    min-width: 70%;
+    min-height: 20dvh;
+    background-color: #ffff;
+    border: solid #70707065 1px;
+    box-shadow: 3px 3px 0 #70707065;
+    border-radius: 30px;
+}
+
+.article-lana-horizontal{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.opc-lana-horizontal{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.color-lana{
+    width: 40px;
+    height: 40px;
+    appearance: none;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.color-lana::-webkit-color-swatch {
+    border-radius: 50%;
+    border: solid #A973A0 2px;
+}
+
+.color-lana::-webkit-color-swatch-wrapper {
+    padding: 0;
+    border-radius: 50%;
+}
+
+.btn-color-lanas{
+    width: 80px;
+    height: 30px;
+    border: solid #ffffffa4 1px;
+    border-radius: 30px;
+}
+
+/* Vertical */
+.article-lana-vertical{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.dibujo-lana-vertical{
+    min-width: 99.5%;
+    min-height: 20dvh;
+    background-color: #ffff;
+    border: solid #70707065 1px;
+    box-shadow: 3px 3px 0 #70707065;
+    border-radius: 30px;
+}
+
+.opc-lana-vertical{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}

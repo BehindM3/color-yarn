@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <script type="module" src="./js/index.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="./assets/yarnCat.svg" alt="Icono de la pagina, representada por un gatito.">
+            <h1>Yarn-Colors</h1>
+        </div>
+    </header>
+    <main>
+        <section class="seccion-form">
+            <form class="form-tipos-lanas" method="get">
+                <select class="form-lanas" title="Seleccion del modo en que se ordenan las lanas" name="modo-lanas" id="modo-lanas" required>
+                    <option value="" disabled selected>Orientacion</option>
+                    <option value="horizontal">Horizontal</option>
+                    <option value="vertical">Vertical</option>
+                </select>
+                <input class="form-lanas" type="number" name="cant-lanas" id="cant-lanas" min="1" max="50" placeholder="Cantidad" required>
+                <button class="form-lanas btn-for-lanas" type="submit" id="cargar-lanas">Cargar</button>
+            </form>
+        </section>
+        <section class="seccion-dib" id="seccion-dib">
+        <!-- Codigo generado segun se elija -->
+        </section>
+    </main>
+</body>
+</html>
